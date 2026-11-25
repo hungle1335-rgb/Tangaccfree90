@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nhập Key Để Nhận ACC LQ Free Nha Ae</title>
+<title>LQ FREE ACC - KEY SYSTEM</title>
 
 <style>
 * {
@@ -19,215 +19,255 @@ body {
     color: white;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     padding: 20px;
-    overflow: hidden;
-}
-
-/* Background */
-body::before {
-    content: "";
-    position: fixed;
-    width: 400px;
-    height: 400px;
-    background: #7c3aed;
-    filter: blur(150px);
-    opacity: 0.25;
-    top: -100px;
-    left: -100px;
-}
-
-body::after {
-    content: "";
-    position: fixed;
-    width: 350px;
-    height: 350px;
-    background: #06b6d4;
-    filter: blur(150px);
-    opacity: 0.2;
-    bottom: -100px;
-    right: -100px;
 }
 
 .container {
-    position: relative;
-    z-index: 1;
     width: 100%;
-    max-width: 420px;
-    padding: 35px 25px;
-    background: rgba(18, 18, 32, 0.9);
-    border: 1px solid rgba(139, 92, 246, 0.4);
-    border-radius: 22px;
+    max-width: 430px;
+    background: #151525;
+    border: 1px solid #7137c9;
+    border-radius: 20px;
+    padding: 30px 23px;
     text-align: center;
-    box-shadow: 0 0 40px rgba(124, 58, 237, 0.15);
-    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px #7c3aed33;
 }
 
 .logo {
     font-size: 55px;
     margin-bottom: 15px;
-    filter: drop-shadow(0 0 15px #a855f7);
 }
 
 h1 {
+    color: #c084fc;
     font-size: 25px;
-    font-weight: 800;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    background: linear-gradient(90deg, #c084fc, #22d3ee);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
 }
 
-.subtitle {
-    color: #a1a1aa;
+p {
+    color: #aaa;
     font-size: 14px;
-    margin-bottom: 28px;
+    margin-bottom: 22px;
     line-height: 1.6;
-}
-
-.input-box {
-    position: relative;
-    margin-bottom: 15px;
 }
 
 input {
     width: 100%;
-    padding: 16px;
-    border-radius: 12px;
+    padding: 15px;
+    background: #090914;
+    border: 1px solid #51416f;
+    border-radius: 10px;
     outline: none;
-    border: 1px solid #37304f;
-    background: #10101c;
     color: white;
-    font-size: 15px;
     text-align: center;
-    transition: 0.3s;
+    font-size: 15px;
+    margin-bottom: 15px;
 }
 
 input:focus {
     border-color: #a855f7;
-    box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);
-}
-
-input::placeholder {
-    color: #71717a;
 }
 
 button {
     width: 100%;
-    padding: 15px;
+    padding: 14px;
     border: none;
-    border-radius: 12px;
-    background: linear-gradient(90deg, #7c3aed, #9333ea, #06b6d4);
+    border-radius: 10px;
+    background: linear-gradient(90deg,#7c3aed,#a855f7);
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
+    margin-bottom: 12px;
 }
 
 button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+    opacity: 0.85;
 }
 
-button:active {
-    transform: scale(0.97);
+.admin {
+    display: none;
 }
 
-#message {
-    margin-top: 18px;
-    font-size: 14px;
+.key-result {
+    background: #090914;
+    border: 1px dashed #a855f7;
+    border-radius: 10px;
+    padding: 18px 10px;
+    color: #4ade80;
+    font-size: 17px;
+    font-weight: bold;
+    word-break: break-all;
+    margin: 18px 0;
+}
+
+.message {
+    font-size: 13px;
     min-height: 20px;
-    line-height: 1.6;
+    margin-top: 8px;
 }
 
-.info {
-    margin-top: 25px;
-    padding-top: 18px;
-    border-top: 1px solid #272738;
-    font-size: 12px;
-    color: #71717a;
-    line-height: 1.7;
+.back {
+    background: #29293b;
 }
 
 .footer {
     margin-top: 15px;
-    color: #52525b;
+    color: #666;
     font-size: 11px;
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 30px 20px;
-    }
-
-    h1 {
-        font-size: 23px;
-    }
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<!-- TRANG NHẬP KEY -->
+<div class="container" id="login">
 
     <div class="logo">🎮</div>
 
     <h1>Nhập Key Để Nhận ACC LQ Free Nha Ae</h1>
 
-    <p class="subtitle">
-        Nhập mã Key của bạn để xác nhận chương trình
-    </p>
+    <p>Nhập Key để tiếp tục vào hệ thống</p>
 
-    <div class="input-box">
-        <input
-            type="text"
-            id="keyInput"
-            placeholder="Nhập Key tại đây..."
-            autocomplete="off"
-        >
-    </div>
+    <input
+        type="text"
+        id="keyInput"
+        placeholder="Nhập Key tại đây..."
+    >
 
     <button onclick="checkKey()">
         🔓 XÁC NHẬN KEY
     </button>
 
-    <div id="message"></div>
-
-    <div class="info">
-        ✨ Giao diện nhận Key phiên bản mới<br>
-        🎮 Chúc ae may mắn nha!
-    </div>
+    <div class="message" id="loginMessage"></div>
 
     <div class="footer">
-        © 2026 • LQ FREE ACC
+        © 2026 LQ FREE ACC
     </div>
 
 </div>
 
+
+<!-- GIAO DIỆN ADMIN -->
+<div class="container admin" id="admin">
+
+    <div class="logo">👑</div>
+
+    <h1>ADMIN CONTROL PANEL</h1>
+
+    <p>Chào mừng Admin đến với hệ thống tạo Key!</p>
+
+    <button onclick="generateKey()">
+        ✨ TẠO KEY MỚI
+    </button>
+
+    <div class="key-result" id="newKey">
+        KEY CHƯA ĐƯỢC TẠO
+    </div>
+
+    <button onclick="copyKey()">
+        📋 SAO CHÉP KEY
+    </button>
+
+    <div class="message" id="adminMessage"></div>
+
+    <button class="back" onclick="goBack()">
+        ↩ QUAY LẠI
+    </button>
+
+    <div class="footer">
+        ADMIN SYSTEM • LQ FREE ACC
+    </div>
+
+</div>
+
+
 <script>
+
+// KEY ADMIN
+const ADMIN_KEY = "tangaccfree902016";
+
+let currentKey = "";
+
+// KIỂM TRA KEY
 function checkKey() {
+
     const key = document.getElementById("keyInput").value.trim();
-    const message = document.getElementById("message");
+    const message = document.getElementById("loginMessage");
 
     if (key === "") {
         message.style.color = "#f87171";
-        message.innerHTML = "⚠️ Vui lòng nhập Key!";
+        message.innerText = "⚠️ Vui lòng nhập Key!";
         return;
     }
 
-    message.style.color = "#fbbf24";
-    message.innerHTML = "⏳ Đang kiểm tra Key...";
+    if (key === ADMIN_KEY) {
 
-    setTimeout(() => {
-        message.style.color = "#fb7185";
-        message.innerHTML =
-            "❌ Key chưa được xác thực! Vui lòng kiểm tra lại.";
-    }, 1000);
+        document.getElementById("login").style.display = "none";
+        document.getElementById("admin").style.display = "block";
+
+    } else {
+
+        message.style.color = "#f87171";
+        message.innerText = "❌ Key không chính xác!";
+
+    }
 }
+
+// TẠO KEY NGẪU NHIÊN
+function generateKey() {
+
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+    let key = "LQFREE-";
+
+    for (let i = 0; i < 16; i++) {
+        key += chars[Math.floor(Math.random() * chars.length)];
+    }
+
+    currentKey = key;
+
+    document.getElementById("newKey").innerText = key;
+
+    document.getElementById("adminMessage").style.color = "#4ade80";
+    document.getElementById("adminMessage").innerText =
+        "✅ Tạo Key thành công!";
+}
+
+// SAO CHÉP KEY
+function copyKey() {
+
+    if (!currentKey) {
+        document.getElementById("adminMessage").innerText =
+            "⚠️ Bạn chưa tạo Key!";
+        return;
+    }
+
+    navigator.clipboard.writeText(currentKey)
+    .then(() => {
+        document.getElementById("adminMessage").innerText =
+            "✅ Đã sao chép Key!";
+    })
+    .catch(() => {
+        document.getElementById("adminMessage").innerText =
+            "Không thể sao chép tự động!";
+    });
+}
+
+// QUAY LẠI
+function goBack() {
+
+    document.getElementById("admin").style.display = "none";
+    document.getElementById("login").style.display = "block";
+
+    document.getElementById("keyInput").value = "";
+    document.getElementById("loginMessage").innerText = "";
+
+}
+
 </script>
 
 </body>
